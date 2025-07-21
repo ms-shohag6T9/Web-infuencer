@@ -52,12 +52,20 @@
     .nav-img-3,
     .nav-img-4{
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     }
     .nav-option{
         display: none;
     }
 
+    .nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 720px;
+    margin: 15px auto;
+
     
+}
 }
