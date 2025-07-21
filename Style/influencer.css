@@ -35,10 +35,15 @@
     width: 40px;
     height: 40px;
 }
+
+.after-response-nav{
+    display: none;
+}
+
 .nav-img-3, .nav-img-4{
     display: none;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 .nav-option div a {
     text-decoration: none;
@@ -46,26 +51,24 @@
     
 }
 
+/* moblie-potrait-response */
 
 @media screen and (max-width: 576px) {
-
     .nav-img-3,
     .nav-img-4{
     display: block;
     width: 32px;
     height: 32px;
     }
-    .nav-option{
+    .nav-option,
+    .nav-container{
         display: none;
     }
-
-    .nav-container{
+    .after-response-nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    max-width: 720px;
-    margin: 15px auto;
-
-    
-}
+    max-width: 700px;
+    margin: 0px auto;
+    } 
 }
