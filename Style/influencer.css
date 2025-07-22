@@ -1,184 +1,214 @@
-/* This is a colour of headers */
-:root{
-    --header-color: #3A3A3A;
-    --btn-color: #E02C6D;
+/* ======= RESET & VARIABLES ======= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* ✅ সব ব্রাউজারে এক রকম মাপের জন্য */
+  margin: 0;
+  padding: 0;
 }
 
-
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px;
-    margin: 50px auto;
+:root {
+  --header-color: #3A3A3A;
+  --btn-color: #E02C6D;
 }
 
-.nav-name{
+/* ======= NAVBAR ======= */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 50px auto;
+  padding: 0 20px; /* ✅ মোবাইলে সাইডে স্পেস রাখার জন্য */
+}
+
+.nav-name {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 1.85rem;
   color: var(--header-color);
- }              /* customization of INFLUENCER */
-
-.nav-option{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 34px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 1.15rem;
-    font-style: normal;
-    padding: 10px;
-}                 /* Home-Sign in-log In */
-.nav-img-1, .nav-img-2{
-    width: 40px;
-    height: 40px;
 }
 
-.after-response-nav{
-    display: none;
+.nav-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  padding: 10px;
 }
 
-.nav-img-3, .nav-img-4{
-    display: none;
-    width: 35px;
-    height: 35px;
-}
 .nav-option div a {
-    text-decoration: none;
-    color: var(--header-color);
-    
+  text-decoration: none;
+  color: var(--header-color);
 }
 
-/* section customization start */
-/* section-info-1 customization start */
-
-.first-section{
-    margin-top: 115px;
+.nav-img-1, .nav-img-2 {
+  width: 40px;
+  height: 40px;
 }
 
-.section-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px;
-    margin: 0px auto;
-}
-.section-info-1{
-    max-width: 585px;
+.after-response-nav {
+  display: none;
 }
 
-.section-info-1 h2{
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 3.15rem;
-    color: var(--header-color);
-    margin-bottom: 25px;
-}
-.section-info-1 p{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    color: var(--header-color);
-    margin-bottom: 35px;
-  
-}
-.section-btn{
-    background-color: var(--btn-color);
-    color: white;
-    border: 0px;
-    border-radius: 35px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.5rem;
-    padding: 20px 50px;
+.nav-img-3, .nav-img-4 {
+  display: none;
+  width: 35px;
+  height: 35px;
 }
 
-/* section-info-2 customization start */
-
-.section-info-2{
-    position: relative;
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ======= SECTION ONE ======= */
+.first-section {
+  margin-top: 115px;
 }
 
-.main-camera{
-    position: absolute;
-}
-.background-circle{
-    position: absolute;
-    z-index: -1;
-}
-
-/* brand-container-customization */
-
-.brand-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1140px;
-    margin: 100px auto;
-    padding: 41px 62px;
-    gap: 35px;
-    box-shadow: 0px 0px 5px 0.5px rgb(231, 225, 225);
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px; /* ✅ মোবাইলে প্যাডিং */
+  gap: 40px; /* ✅ উপাদানের মাঝে ফাঁকা */
 }
 
-@media screen and (max-width: 600px) {
-    .nav-img-3,
-    .nav-img-4{
+.section-info-1 {
+  max-width: 585px;
+}
+
+.section-info-1 h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3.15rem;
+  color: var(--header-color);
+  margin-bottom: 25px;
+}
+
+.section-info-1 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--header-color);
+  margin-bottom: 35px;
+}
+
+.section-btn {
+  background-color: var(--btn-color);
+  color: white;
+  border: none;
+  border-radius: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 20px 50px;
+  cursor: pointer;
+}
+
+/* ======= IMAGE SECTION (PROBLEM HERE) ======= */
+.section-info-2 {
+  position: relative;
+  width: 100%; /* ❌ আগে ছিল 500px → মোবাইলে ভেঙে যাচ্ছিল */
+  max-width: 500px;
+  height: auto; /* ❌ height: 500px ছিল, মোবাইলে overflow করত */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-info-2 img {
+  width: 100%;
+  max-width: 300px; /* ✅ বড় স্ক্রিনে সীমাবদ্ধ রাখার জন্য */
+  height: auto;
+}
+
+.main-camera {
+  position: absolute;
+}
+
+.background-circle {
+  position: absolute;
+  z-index: -1;
+}
+
+/* ======= BRAND CONTAINER ======= */
+.brand-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin: 100px auto;
+  padding: 41px 62px;
+  gap: 35px;
+  box-shadow: 0 0 5px 0.5px rgb(231, 225, 225);
+}
+
+/* ======= MOBILE RESPONSIVE START ======= */
+@media screen and (max-width: 576px) {
+
+  body {
+    padding: 0 10px; /* ✅ মোবাইলে সাইড স্পেস */
+  }
+
+  .nav-img-3, .nav-img-4 {
     display: block;
     width: 32px;
     height: 32px;
-    }
-    .nav-option,
-    .nav-container{
-        display: none;
-    }
-    .after-response-nav{
+  }
+
+  .nav-option, .nav-container {
+    display: none; /* ✅ বড় স্ক্রিনের মেনু লুকানো */
+  }
+
+  .after-response-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 700px;
-    margin: 0px auto;
-    } 
-    /* .section-container-rseponsive */
-    .section-container{
-        flex-direction: column-reverse
-    }
-    .section-info-1{
-        text-align: center;
-    }
-    .section-info-1 h2{
-    font-size: 1.85rem;
-    }
-    .section-info-2{
-    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+
+  .section-container {
+    flex-direction: column-reverse; /* ✅ মোবাইলে নিচের ছবিটা আগে দেখানোর জন্য */
+    padding: 20px 10px;
+    gap: 30px;
+  }
+
+  .section-info-1 {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .section-info-1 h2 {
+    font-size: 1.85rem; /* ✅ মোবাইলে হেডার ছোট */
+  }
+
+  .section-btn {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    /* secttion brand container responsive */
-    .brand-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+    max-width: 250px; /* ✅ মোবাইলে বাটন ছোট */
+  }
+
+  .section-info-2 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .section-info-2 img {
+    max-width: 280px; /* ✅ মোবাইলের জন্য ছবি ছোট */
+  }
+
+  .brand-container {
     max-width: 500px;
-    margin: 150px auto;
+    margin: 80px auto;
     padding: 20px 35px;
     gap: 15px;
     border-radius: 30px;
-    box-shadow: 0px 0px 5px 0.5px rgb(231, 225, 225);
+    box-shadow: 0 0 5px 0.5px rgb(231, 225, 225);
+  }
 }
-
-}    
-/* moblie-potrait-response */                                     
