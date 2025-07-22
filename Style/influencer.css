@@ -145,6 +145,70 @@
   box-shadow: 0 0 5px 0.5px rgb(231, 225, 225);
 }
 
+/* ======= MAIN CONTAINER ======= */
+.Collection-title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28;
+    text-align: center;
+    color: var(--header-color);
+}
+/* ======= CARD CONTAINER ======= */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1140px;
+    margin: 80px auto;
+    gap: 35px;
+    /* border: 8px solid rgb(255, 0, 0); */
+}
+
+.collection-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.5px rgb(211, 206, 206);
+}
+/* ======= INSIDE THE BOX ======= */
+.
+.product-photo{
+    width: 90%;
+    max-width:300px;
+    height: auto;
+}
+.img-rating{
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+}
+
+.card-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.85rem;
+  margin: 15px 5px;
+}
+
+.card-price{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.65rem;
+  color: #5a5959;
+  margin-bottom: 10px;
+}
+
+.product-detail{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #5a5959;
+}
+
 /* ======= MOBILE RESPONSIVE START ======= */
 @media screen and (max-width: 576px) {
 
@@ -211,4 +275,11 @@
     border-radius: 30px;
     box-shadow: 0 0 5px 0.5px rgb(231, 225, 225);
   }
+
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 500px;
+    margin: 20px auto;
+    gap: 15px;
 }
