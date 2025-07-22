@@ -53,8 +53,9 @@
 }
 
 /* section customization start */
+/* section-info-1 customization start */
 
-.main-section{
+.first-section{
     margin-top: 115px;
 }
 
@@ -64,23 +65,11 @@
     align-items: center;
     max-width: 1440px;
     margin: 0px auto;
-    /* border: 1px solid black; */
 }
 .section-info-1{
     max-width: 585px;
 }
 
-.section-info-2 .section-info-cover-2{
-    width: 520px;
-    height: auto;
-}
-   
-.section-info-cover-1{
-    position: absolute;
-    top: 225px;
-    z-index: -1;
-    width: 550px;
-}
 .section-info-1 h2{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -109,6 +98,26 @@
     padding: 20px 50px;
 }
 
+/* section-info-2 customization start */
+
+.section-info-2{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-camera{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}
+.background-circle{
+    position: absolute;
+    z-index: -1;
+}
 
 @media screen and (max-width: 576px) {
     .nav-img-3,
@@ -128,4 +137,24 @@
     max-width: 700px;
     margin: 0px auto;
     } 
-}                                         /* moblie-potrait-response */
+    /* .section-container-rseponsive */
+    .section-container{
+        flex-direction: column-reverse
+    }
+    .section-info-1{
+        text-align: center;
+    }
+    .section-info-1 h2{
+    font-size: 1.85rem;
+    }
+
+    .section-info-2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+}    
+/* moblie-potrait-response */                                     
