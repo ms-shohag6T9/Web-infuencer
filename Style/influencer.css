@@ -175,7 +175,6 @@
     box-shadow: 0 0 5px 0.5px rgb(211, 206, 206);
 }
 /* ======= INSIDE THE BOX ======= */
-.
 .product-photo{
     width: 90%;
     max-width:300px;
@@ -283,3 +282,4 @@
     margin: 20px auto;
     gap: 15px;
 }
+ }
