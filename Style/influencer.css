@@ -160,25 +160,29 @@
     grid-template-columns: repeat(3, 1fr);
     max-width: 1140px;
     margin: 80px auto;
-    gap: 35px;
+    gap: 25px;
     /* border: 8px solid rgb(255, 0, 0); */
 }
 
 .collection-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 30px;
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 0 5px 0.5px rgb(211, 206, 206);
 }
+
+.card-alignment{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: normal;
+}
 /* ======= INSIDE THE BOX ======= */
 .product-photo{
-    width: 90%;
-    max-width:300px;
+    width: 100%;
     height: auto;
+    max-width:400px;
+    
 }
 .img-rating{
     width: 100%;
@@ -195,7 +199,7 @@
 
 .card-price{
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.65rem;
   color: #5a5959;
   margin-bottom: 10px;
@@ -203,9 +207,55 @@
 
 .product-detail{
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 0.95rem;
+  font-weight: 400;
+  font-size: 1rem;
   color: #5a5959;
+  width: 250px;
+}
+
+/* ======= Feature Container ======= */
+.feature-products-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  max-width: 1120px;
+  margin: 150px auto;
+  gap: 100px;
+}
+.head-des-btn{
+  display: block;
+}
+
+/* =======INSIDE THE Feature Container ======= */
+.festure-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.38rem;
+  color: var(--header-color);
+  margin-bottom: 25px;
+}
+
+.feature-discription{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: rgba(108, 108, 108, 1);
+  margin-bottom: 27px;
+}
+.feature-button{
+  background-color: var(--btn-color);
+  color: white;
+  border: none;
+  margin-bottom: 0px;
+  padding: 10px 56px 10px 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 /* ======= MOBILE RESPONSIVE START ======= */
@@ -281,5 +331,34 @@
     max-width: 500px;
     margin: 20px auto;
     gap: 15px;
-}
+  }
+  
+  .feature-products-container{
+    flex-direction: column-reverse; 
+  }
+  .head-des-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .festure-title{
+    font-size: 1.55rem;
+    text-align: center;
+  }
+  .feature-discription{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .feature-button{
+    padding: 10px 36px 10px 24px;
+    margin-top: 35px;
+  }
+  .feature-img{
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+  }
+
+
  }
