@@ -164,18 +164,16 @@
   gap: 35px;
   box-shadow: 0 0 5px 0.5px rgb(231, 225, 225);
 }
-.brand-container .brand-icon img{
+.brand-icon img{
   width: 100%;
   height: auto;
   max-width: 250px;
 }
-.brand-container .brand-icon img:hover{
+.brand-icon img:hover{
   width: 110%;
   height: auto;
   max-width: 200px;
   filter: grayscale(0);
-  
-
 }
 /* ======= MAIN CONTAINER ======= */
 .Collection-title{
@@ -396,13 +394,6 @@
     border-radius: 30px;
     box-shadow: 0 0 5px 0.5px rgb(231, 225, 225);
   }
-
-  .brand-container .brand-icon img{
-  width: 100%;
-  height: auto;
-  max-width: 250px;
-  filter: grayscale(1);
-
   .card-container{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -410,7 +401,9 @@
     margin: 20px auto;
     gap: 15px;
   }
-  
+  .brand-icon img{
+  filter: grayscale(1);
+  }
   .feature-products-container{
     flex-direction: column-reverse; 
   }
@@ -424,7 +417,7 @@
     font-size: 1.55rem;
     text-align: center;
   }
-  .feature-discription{
+  .feature-discriptions{
     font-size: 1rem;
     text-align: center;
   }
@@ -440,6 +433,4 @@
   .footer-title{
     font-size: 1rem;
   }
-
-
  }
